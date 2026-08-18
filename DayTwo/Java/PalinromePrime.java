@@ -5,15 +5,19 @@ public class PalindromePrime{
 
     int store = number;
 
+    int reversedNum = 0;
     for(int count = 1; store > 0; count++){
 
-    store % 10;
-    int num / store;
+    int num = store % 10;
 
-    number = num + 10 * 10;
+    store = store / 10;
+
+    reversedNum =  reversedNum * 10 + num;
+    }
+        
     }
 
-    System.out.println(number);
+    System.out.println(reversedNum);
 
 }
 }
