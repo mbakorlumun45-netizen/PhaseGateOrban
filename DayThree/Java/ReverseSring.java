@@ -3,9 +3,9 @@ public class ReverseSring{
 
     String reversedWord = "";
 
-    for(int count = 1; count < word.length() - 1; count--){
+    for(int count= word.length()-1; count >= 0; count--){
 
-        reversedWord = word.charAt(count);    
+        reversedWord += word.charAt(count);    
     }
     return reversedWord;
     }
