@@ -7,7 +7,6 @@ public class SquareNumber{
 
 public static void main(String[] args){
 
-
     int result = square(10, 10);
 
     System.out.println(result);
