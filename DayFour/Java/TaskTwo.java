@@ -1,28 +1,20 @@
 import java.util.Scanner;
-public class TaskOne{
-    public static int grade(int numbers){
+public class TaskTwo{
+    public static void main(String[] args){
 
     Scanner input = new Scanner(System.in);
 
     int sum = 0;
+    int average = 0;
     int count = 0;
-
-    while(count <= 10){
-
+    while(count < 10){
+        System.out.print("Enter a score: ");
+        int score = input.nextInt();
         sum = sum + score;
-        }
+        average = sum / 10;
         count++;
-
-        return sum;
         }
-
-public static void main(String[] args){
-    
-    System.out.print("Enter a score: ");
-    int score = input.nextInt();
-
-    int result = grade(numbers);
-
-    System.out.println(grade(result));   
+         
+        System.out.println(average);     
     }
 }
